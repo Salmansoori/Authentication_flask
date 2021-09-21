@@ -57,6 +57,8 @@ def Signup():
             return render_template("login.html")
     return render_template('signup.html')
 
+
+#login route
 @app.route("/login",methods=["GET","POST"])
 def login():
     #check if user already loggedin, then redirect to home page
